@@ -3,10 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>Rotating Navigation</title>
   </head>
   <body>
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <h1>The Future of Headless CMS</h1>
+        <small>JAMES MIKRUT & STEVEN TEY</small>
+        <p>
+          The tech ecosystem, especially frontend, changes at light speed. It gets overwhelming to try and keep up. But I kinda love change and I think it's once again time for change in the CMS world. <br>
+          Back in ~2015, I was an early advocate for headless CMS because I wanted our agency to be able to use React for the frontends of the sites we built. I had a big pitch I'd give to my clients about the value of "headless" CMS, and they bit. But now we're taking a second to re-evaluate that pitch.
+          <br> <br>
+          In my pitches, I would fire off the benefits of headless CMS, focusing on ideas like separation of concerns, more maintainable architecture, and the ability to deliver omnichannel content from a single source of truth.
+          
+          But in retrospect, I had to gloss over the unfortunate side-effects of headless. The simple fact is that I was pushing my technical agenda on our clients simply because I wanted to use React. Granted, we built some killer stuff for our clients and React enabled that.
+          <br> <br>
+          Lots of the other upsides to headless CMS were true, for sure. A CMS should obviously be API-first nowadays. That's a given that doesn't even need to be stated anymore. But I can count on one hand the amount of times we used a headless CMS for OmNiChAnNeL content. Most all of our headless CMS builds were just used to power a single website. Actually reading about how some of the big headless CMS position themselves as thought leaders around decentralized / omnichannel / content hub / etc. just makes me laugh at this point.
+        </p>
+        <h3>Content Management System</h3>
+        <img src="./images/CMS.jpg" alt="">
+        <p>
+          When we'd update a content model on the CMS side, we'd need to very deliberately think about how to deploy all of our changes to the CMS at the exact same time as our changes to our frontend to minimize downtime and prevent breaking code.
+          <br> <br>
+          Doesn't matter if we used Contentful, Sanity, Wordpress, whatever—the CMS being separate meant that we had to orchestrate deployments with caution.
+        </p>
+      </div>
+    </div>
+
+    <nav>
+      <li><i class="fas fa-home"></i>Home</li>
+      <li><i class="fas fa-user-alt"></i>About</li>
+      <li><i class="fas fa-envelope"></i>Contact</li>
+
+    </nav>
     <script src="script.js"></script>
   </body>
 </html>
